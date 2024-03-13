@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador</title>
+    <style>
+        body{
+            background-color: rgb(91, 38, 91);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.8em;
+            position: relative;
+            width: 97vw;
+            height: 100vh;
+            margin: auto;
+        }
+        section {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            
+            transform: translate(50%, -50%);
+        }
+        section > input {
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Estrangeiro ou Brasileiro</h1>
+        Digite sua nacionalidade: <input type="text" name="nacionalidade" id="nacionalidade">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="resultado">Resultado:</div> 
+    </section>
+    <script>
+        function verificar() {
+            var pais = 'Brasil'
+            var nacionalidade = document.getElementById('nacionalidade');
+            var resultado = document.getElementById('resultado');
+            if(nacionalidade.value =='Brasil'){
+                resultado.innerHTML = 'Você é Brasileiro'
+            }else {
+                resultado.innerHTML = 'Você é gringo'
+            }
+        }
+    </script>
+</body>
+</html>

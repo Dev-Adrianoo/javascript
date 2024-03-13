@@ -35,20 +35,20 @@
 <body>
    <section>
             <h1>Somando Valores</h1>
-            <input type="number" name="numero1" id="numero01"> +
+            <input type="number" name="numero1" id="numero01"> + <!--Name serve pra php e id para javaScript-->
             <input type="number" name="numero2" id="numero02">
             <input type="button" value="somar" onclick="somar()">
             <div id="resposta">RESULTADO!</div>
    </section>
     <script>
         function somar(numero1, numero2) {
-            var tn1 = window.document.getElementById('numero01');
-            var tn2 = window.document.getElementById('numero02');
-            var resposta = window.document.getElementById('resposta');
-            var n1 = Number(tn1.value);
-            var n2 = Number(tn2.value);
-            var s = n1 + n2;
-            resposta.innerHTML = `A Soma entre ${n1} e ${n2} é igual a <strong>${s}!</strong>`
+            var tn1 = window.document.getElementById('numero01'); // pegando dados de uma caixa de texto   
+            var tn2 = window.document.getElementById('numero02');  // Pegando dados de uma caixa de texto
+            var resposta = window.document.getElementById('resposta'); // resultado
+            var n1 = Number(tn1.value); //transformando no tipo number
+            var n2 = Number(tn2.value); //transformando no tipo number
+            var s = n1 + n2; // Somando os 2 números
+            resposta.innerHTML = `A Soma entre ${n1} e ${n2} é igual a <strong>${s}!</strong>` //Mostrando na tela o resultado!
         }
     </script>
 </body>
