@@ -10,16 +10,9 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1.8em;
             position: relative;
-            width: 97vw;
-            height: 100vh;
+            width: 97%;
+            height: 100%;
             margin: auto;
-        }
-        section {
-            position: relative;
-            left: 50%;
-            top: 50%;
-            
-            transform: translate(50%, -50%);
         }
         section > input {
             border-radius: 6px;
@@ -35,7 +28,7 @@
     </section>
     <script>
         function verificar() {
-            var pais = 'Brasil'
+            var pais = 'Brasil'  || 'Brasileiro';
             var nacionalidade = document.getElementById('nacionalidade');
             var resultado = document.getElementById('resultado');
             if(nacionalidade.value =='Brasil'){
