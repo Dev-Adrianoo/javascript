@@ -35,7 +35,12 @@ header {
     margin: auto;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.293);
  }
+div {
+   text-align: center;
+   padding-bottom: 17px;
+   padding-top: 3px
 
+}
  #foto {
    display: flex;
    justify-content: center;
