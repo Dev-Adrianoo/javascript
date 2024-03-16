@@ -23,5 +23,5 @@ if (hora >= 0 && hora <=12) {
 }
 
 
-// obs setAttribute serve pra setar 2 atributos.
+// obs setAttribute: serve pra setar 2 atributos.
 //document.body.style.background = " " 

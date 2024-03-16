@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p> Ano de Nascimento:</p>
+                <input type="number" name="numeroDeNascimento" id="numeroDeNascimento" placeholder="Digite seu ano de Nascimento"  required>
+            </p>
+            <p>
+                Sexo:
+            </p>
+            <p>
+                
+                <label id="sexom" for="sexoM">
+                <input type="radio" name="fsex" id="sexoM" value="sexoM" checked> Masculino <label>
+            </p>
+            <p>
+                <label id="sexof" for="SexoF">
+                <input type="radio" name="fsex" id="SexoF" value="SexoF"> Feminino
+                </label>
+            </p>
+            <p>
+               <input type="button" value="verificar" onclick="verifica()">
+            </p>
+        </div>
+        <div id="resultado">
+          <img id="foto" src="chimpanze-pensando.jpg.jpg" alt="um chipanze pensando">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Feito por: Adriano</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
