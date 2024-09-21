@@ -11,6 +11,11 @@
             background-color: rgba(0, 0, 255, 0.571);
             height: 100vh;
             width: 96vw;
+            background-image: url(macaco-rindo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left left;
+            background-attachment: fixed;
             /* font-weight: bolder;
             font-size: 2em; */
         }
@@ -26,11 +31,26 @@
     </style>
 </head>
 <body>
-    <h1>Olá,Mundo!</h1>
-    <p>Já Me livrei da maldição,BORA VIBRAR TEM QUE VIBRAR!</p>
+    <h1>Teste do nome...</h1>
     <script>
-       var nome = window.prompt('Qual é seu nome?'); //Vai perguntar seu nome
-        window.alert('é um grande prazer te conhecer, ' + nome + "!") //Concatenação!
+       let nome = window.prompt("Qual é seu nome? : ")
+       if (nome == 'Adriano') {
+        window.alert("VISH SEU NOME É ADRIANO?")
+        let confirmacao =  window.prompt("TEM CERTEZA? [S/N]")
+        if (confirmacao == 'S') {
+            window.alert("NOME BONITO DA PORRA NEGÃO, GOSTOSO")
+    }
+}
+else {
+    window.alert(`${nome}, que nome feio...`)
+}
     </script>
 </body>
 </html>
+
+a = int(input())
+b = int(input())
+
+x = a + b 
+
+print('X = ', x)
